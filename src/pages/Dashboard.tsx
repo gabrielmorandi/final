@@ -19,8 +19,6 @@ export default function Dashboard() {
                 if (response.ok) {
                     const data = await response.json();
                     setUserData(data.user);
-                } else {
-                    const data = await response.json();
                 }
             } catch (error) {
                 console.error("Erro ao buscar dados do usuário:", error);
